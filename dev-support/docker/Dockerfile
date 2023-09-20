@@ -18,7 +18,7 @@
 # Dockerfile for installing the necessary dependencies for building Hadoop.
 # See BUILDING.txt.
 
-FROM ubuntu:bionic
+FROM ubuntu:jammy
 
 WORKDIR /root
 
@@ -66,7 +66,7 @@ RUN apt-get -q update \
         libssl-dev \
         libsnappy-dev \
         libtool \
-        libzstd1-dev \
+        libzstd-dev \
         locales \
         make \
         pinentry-curses \
